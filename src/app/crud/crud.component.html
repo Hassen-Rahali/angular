@@ -1,0 +1,24 @@
+<table class="table" >
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>titre</th>
+    <th>price</th>
+    <th>quantity</th>
+    <th >like</th>
+    <th >Action</th>
+    <th >Action</th>
+    <th>details</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let Product of listPro ; let i = index ">
+  <tr  >
+    <td>{{Product.id}}</td>
+    <td>{{Product.title}}</td>
+    <td>{{Product.price}}</td>
+    <td>{{Product.quantity}}</td>
+    <td>{{Product.like}}</td>
+
+  </tr>
+  </tbody>
+</table>

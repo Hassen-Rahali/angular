@@ -1,0 +1,17 @@
+h3{
+  font-weight: bold;
+  text-decoration-color: aqua;
+  position: center;
+  float: left;
+  font-size:50px;
+  color: forestgreen;
+}
+input{
+  width: 100%;
+}
+table{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}

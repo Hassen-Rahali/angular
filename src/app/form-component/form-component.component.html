@@ -1,0 +1,63 @@
+<div class="container">
+  <h1 class="text-primary">ajouter produit</h1>
+
+  <div class="row">
+    <!-- left column -->
+
+
+    <!-- edit form column -->
+    <div class="col-md-9">
+
+      <h3>product info</h3>
+
+      <div ngForm #form="ngForm">
+        <div class="form-group">
+          <label class="col-lg-3 ">id product:</label>
+
+            <input name="a" class="form-control" type="number" required [(ngModel)]="product.id" #f="ngModel">
+
+            <div class="alert alert-danger mt-2" *ngIf="f.invalid&&f.touched">
+              <p *ngIf="f.hasError('required')">this field is
+              required</p>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 ">title product:</label>
+
+            <input class="form-control" type="text"  name="b"
+                   pattern="[a-z A-Z]{3,20}$"
+                   required [(ngModel)]="product.title" #t="ngModel" >
+            <div class="alert alert-danger mt-2" *ngIf="t.invalid && t.touched">
+              <p *ngIf="t.hasError('required')">this field is required</p>
+              <p *ngIf="t.hasError('pattern')">pattern error</p>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 ">price:</label>
+
+            <input class="form-control" type="number" required [(ngModel)]="product.price"  name="c" #p="ngModel" >
+            <div  class="alert alert-danger mt-2" *ngIf="p.invalid&&p.touched"><p *ngIf="p.hasError('required')">this field is
+              required</p></div>
+
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 ">quantity:</label>
+
+            <input class="form-control" type="number" required  name="d" [(ngModel)]="product.quantity" #q="ngModel">
+            <div class="alert alert-danger mt-2" *ngIf="q.invalid&&q.touched"><p *ngIf="q.hasError('required')">this field is
+              required</p></div>
+
+        </div>
+
+        <button  class="btn m-2 btn-success" [disabled]="form.invalid" (click)="save()">save</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+

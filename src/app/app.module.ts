@@ -3,20 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AjouterStageComponent } from './ajouter-stage/ajouter-stage.component';
+import { AjouterFormComponent } from './ajouter-form/ajouter-form.component';
 import { HeaderComponent } from './header/header.component';
-import { ListeStageComponent } from './liste-stage/liste-stage.component';
+import { ListeComponent } from './liste/liste.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { FilterPipe } from './filter.pipe';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AjouterStageComponent,
+    AjouterFormComponent,
     HeaderComponent,
-    ListeStageComponent,
-    FilterPipe
+    ListeComponent,
+    FilterPipe,
+    NotfoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

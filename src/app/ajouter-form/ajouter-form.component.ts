@@ -4,11 +4,11 @@ import {StageService} from "../service/stage.service";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-ajouter-stage',
-  templateUrl: './ajouter-stage.component.html',
-  styleUrls: ['./ajouter-stage.component.css']
+  selector: 'app-ajouter-form',
+  templateUrl: './ajouter-form.component.html',
+  styleUrls: ['./ajouter-form.component.css']
 })
-export class AjouterStageComponent implements OnInit {
+export class AjouterFormComponent implements OnInit {
 
  stage!:stage;
  liststage!:stage[];

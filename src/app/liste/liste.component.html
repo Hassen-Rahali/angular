@@ -27,7 +27,7 @@
     <td>{{stage.disponible}}</td>
     <td>{{stage.nbrInteresse}}</td>
     <td><button class="btn btn-sm btn-danger" (click)="delete(stage)">delete</button> </td>
-    <td><button class="btn btn-primary">interresse</button></td>
+    <td><button class="btn btn-primary"(click)="incrementinterresse(stage)">interresse</button></td>
     <td><button class="btn btn-secondary"[routerLink]="['/update/',stage.id]"> Update</button></td>
     <td><a routerLink="">Details</a></td>
   </tr>

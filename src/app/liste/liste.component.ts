@@ -3,13 +3,13 @@ import {stage} from "../model/Stage";
 import {StageService} from "../service/stage.service";
 
 @Component({
-  selector: 'app-liste-stage',
-  templateUrl: './liste-stage.component.html',
-  styleUrls: ['./liste-stage.component.css']
+  selector: 'app-liste',
+  templateUrl: './liste.component.html',
+  styleUrls: ['./liste.component.css']
 })
 
 
-export class ListeStageComponent implements OnInit {
+export class ListeComponent implements OnInit {
   search:string="";
   stage!:stage;
   liststage!:stage[];
@@ -22,6 +22,13 @@ export class ListeStageComponent implements OnInit {
       (data:stage[])=>this.liststage=data,);
 
   }
+  incrementinterresse(stage:stage){
+    let i = this.liststage.indexOf(stage);
+    if(i!=-1){
+      this.liststage[i].nbrInteresse++;
+    }
+  }
+
 delete(stage:stage){
     this.stageService.deleteStage(stage.id).subscribe(
       ()=>{

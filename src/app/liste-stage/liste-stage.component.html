@@ -1,0 +1,35 @@
+
+
+
+
+
+<input [(ngModel)]="search" name="searchtext"type="text " autocomplete="off">
+<table class="table" >
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>ref</th>
+    <th>titre</th>
+    <th>description</th>
+    <th >entreprise</th>
+    <th >disponible</th>
+    <th >nbrInteresse</th>
+
+  </tr>
+  </thead>
+  <tbody *ngFor="let stage of liststage | filter:search ; let i = index ">
+  <tr  >
+    <td>{{stage.id}}</td>
+    <td>{{stage.ref}}</td>
+    <td>{{stage.titre}}</td>
+    <td>{{stage.description}}</td>
+    <td>{{stage.entreprise}}</td>
+    <td>{{stage.disponible}}</td>
+    <td>{{stage.nbrInteresse}}</td>
+    <td><button class="btn btn-sm btn-danger" (click)="delete(stage)">delete</button> </td>
+    <td><button class="btn btn-primary">interresse</button></td>
+    <td><button class="btn btn-secondary"[routerLink]="['/update/',stage.id]"> Update</button></td>
+    <td><a routerLink="">Details</a></td>
+  </tr>
+  </tbody>
+</table>

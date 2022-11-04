@@ -1,0 +1,85 @@
+{
+  "stage": [
+    {
+      "ref": 2,
+      "titre": "chakibaaaaaaaa",
+      "description": "chakirrrrrra",
+      "entreprise": "isi",
+      "disponible": false,
+      "nbrInteresse": 8,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "titre": "µMLKHGFD",
+      "ref": 5,
+      "description": "JHKHJ",
+      "entreprise": "JHKHJK",
+      "disponible": "true",
+      "nbrInteresse": 5
+    },
+    {
+      "id": 6,
+      "titre": "µMLKHGFD",
+      "ref": 5,
+      "description": "JHKHJ",
+      "entreprise": "JHKHJK",
+      "disponible": "true",
+      "nbrInteresse": 5
+    },
+    {
+      "id": 7,
+      "titre": "µMLKHGFD",
+      "ref": 5,
+      "description": "JHKHJ",
+      "entreprise": "JHKHJK",
+      "disponible": "false",
+      "nbrInteresse": 5
+    },
+    {
+      "id": 8,
+      "titre": "ghgh",
+      "ref": 122,
+      "description": "hghgh",
+      "entreprise": "ghgfh",
+      "disponible": "true",
+      "nbrInteresse": 25
+    },
+    {
+      "id": 9,
+      "titre": "ghgh",
+      "ref": 122,
+      "description": "hghgh",
+      "entreprise": "ghgfh",
+      "disponible": "true",
+      "nbrInteresse": 25
+    },
+    {
+      "id": 10,
+      "titre": "ghgh",
+      "ref": 122,
+      "description": "hghgh",
+      "entreprise": "ghgfh",
+      "disponible": "true",
+      "nbrInteresse": 25
+    },
+    {
+      "id": 11,
+      "titre": "ghgh",
+      "ref": 122,
+      "description": "hghgh",
+      "entreprise": "ghgfh",
+      "disponible": "true",
+      "nbrInteresse": 25
+    },
+    {
+      "id": 12,
+      "titre": "chakiba",
+      "ref": 5,
+      "description": "elif",
+      "entreprise": "kef",
+      "disponible": "true",
+      "nbrInteresse": 12212
+    }
+  ]
+}

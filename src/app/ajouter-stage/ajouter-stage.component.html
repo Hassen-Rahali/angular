@@ -1,0 +1,70 @@
+<div class="container">
+  <h1 class="text-primary">ajouter stage</h1>
+
+  <div class="row">
+    <!-- left column -->
+
+
+    <!-- edit form column -->
+    <div class="col-md-9">
+
+      <h3>stage info</h3>
+
+      <div ngForm #form="ngForm">
+        <div class="form-group">
+          <label class="col-lg-3 ">id stage:</label>
+
+          <input name="a" class="form-control" type="number" required [(ngModel)]="stage.id" #f="ngModel">
+          <div class="alert alert-danger mt-2" *ngIf="f.invalid&&f.touched">
+            <p *ngIf="f.hasError('required')">this field is
+              required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 ">title stage:</label>
+          <input class="form-control" type="text"  name="b"
+                 required [(ngModel)]="stage.titre" #t="ngModel" >
+          <div class="alert alert-danger mt-2" *ngIf="t.invalid && t.touched">
+            <p *ngIf="t.hasError('required')">this field is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 ">ref:</label>
+
+          <input class="form-control" type="number" required [(ngModel)]="stage.ref"  name="c" #p="ngModel" >
+          <div  class="alert alert-danger mt-2" *ngIf="p.invalid&&p.touched"><p *ngIf="p.hasError('required')">this field is
+            required</p></div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 ">description:</label>
+
+          <input class="form-control" type="text" required  name="d" [(ngModel)]="stage.description" #q="ngModel">
+          <div class="alert alert-danger mt-2" *ngIf="q.invalid&&q.touched"><p *ngIf="q.hasError('required')">this field is
+            required</p></div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 ">entreprise:</label>
+          <input class="form-control" type="text" required  name="d" [(ngModel)]="stage.entreprise" #aa="ngModel">
+          <div class="alert alert-danger mt-2" *ngIf="aa.invalid&&aa.touched"><p *ngIf="aa.hasError('required')">this field is
+            required</p></div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 ">disponible:</label>
+          <input class="form-control" type="text" required  name="d" [(ngModel)]="stage.disponible" #bb="ngModel">
+          <div class="alert alert-danger mt-2" *ngIf="bb.invalid&&bb.touched"><p *ngIf="bb.hasError('required')">this field is
+            required</p></div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 ">nbrInteresse:</label>
+          <input class="form-control" type="number" required  name="d" [(ngModel)]="stage.nbrInteresse" #cc="ngModel">
+          <div class="alert alert-danger mt-2" *ngIf="cc.invalid&&cc.touched"><p *ngIf="cc.hasError('required')">this field is
+            required</p></div>
+        </div>
+        <button  class="btn m-2 btn-success" [disabled]="form.invalid" (click)="saveStage()">save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

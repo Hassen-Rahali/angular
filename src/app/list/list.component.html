@@ -1,0 +1,33 @@
+
+
+
+<input  name="searchtext"type="text " autocomplete="off">
+<table class="table" >
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>ref</th>
+    <th>titre</th>
+    <th>description</th>
+    <th >entreprise</th>
+    <th >disponible</th>
+    <th >nbrInteresse</th>
+
+  </tr>
+  </thead>
+  <tbody *ngFor="let exemple of listExemple  ; let i = index ">
+  <tr  >
+    <td>{{exemple.id}}</td>
+    <td>{{exemple.ref}}</td>
+    <td>{{exemple.titre}}</td>
+    <td>{{exemple.description}}</td>
+    <td>{{exemple.entreprise}}</td>
+    <td>{{exemple.disponible}}</td>
+    <td>{{exemple.nbrInteresse}}</td>
+    <td><button class="btn btn-sm btn-danger" >delete</button> </td>
+    <td><button class="btn btn-primary">interresse</button></td>
+    <td><button class="btn btn-secondary"> Update</button></td>
+    <td><a routerLink="">Details</a></td>
+  </tr>
+  </tbody>
+</table>
